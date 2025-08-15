@@ -6,9 +6,10 @@ import linkedin from "../../public/images/linkedin.png";
 import Image from "next/image";
 import Link from "next/link";
 import { Mail, MapPin } from "lucide-react";
+
 export default function Sidebar() {
   return (
-    <aside className="w-80 mt-10 rounded-md flex flex-col items-center">
+    <aside className="w-full mt-10 rounded-md flex flex-col items-center">
       <Image src={pic} alt="pic" className="rounded-md shadow-lg" />
 
       <div className="flex flex-col gap-2 w-full p-4">
