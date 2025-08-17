@@ -1,8 +1,11 @@
+import { link } from "fs";
+
 export const news = [
   {
-    title:
-      "Thrilled to announce AI powered OCR is on live go and use here’s OCR.",
+    title: `Thrilled to announce AI powered OCR is on live go and use here’s OCR.`,
     date: "Aug, 2023",
+    keyword: "OCR",
+    link: "https://ocr-frontend.toystack.dev/",
   },
   {
     title: "Published a blog on secure hospital management systems",

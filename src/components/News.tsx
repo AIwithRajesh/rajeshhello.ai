@@ -4,6 +4,7 @@ import Image from "next/image";
 import { news } from "../../public/data";
 import github from "../../public/images/github-logo.png";
 import React from "react";
+import LinkyfyText from "./LinkyfyText";
 
 export default function News() {
   const ref = React.useRef<HTMLDivElement>(null);
@@ -22,15 +23,22 @@ export default function News() {
           <div
             ref={ref}
             key={index}
-            className="mb-4 border border-color min-h-[465px] min-w-45 max-[212px] p-4 rounded-md "
+            className="mb-4 relative border border-color min-h-[465px] min-w-45 max-[212px] p-2 rounded-md "
           >
             <Image
               src={github}
               alt="logo"
               className="h-40 w-50 object-cover bg-white "
             />
-            <h3 className="text-sm">{item.title}</h3>
-            <p className="text-sm mt-10 text-gray-500">{item.date}</p>
+            <h3 className="mt-4">{item.title}</h3>
+            <LinkyfyText
+              text={item.title}
+              keyword={item?.keyword}
+              link={item?.link}
+            />
+            <p className="absolute bottom-0 left-2 text-gray-500">
+              {item.date}
+            </p>
           </div>
         ))}
       </div>
