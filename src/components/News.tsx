@@ -7,12 +7,17 @@ import React from "react";
 
 export default function News() {
   const ref = React.useRef<HTMLDivElement>(null);
-  console.log(ref);
+  console.log(ref.current);
+  React.useEffect(() => {
+    if (ref.current) {
+      console.log(ref.current);
+    }
+  }, []);
 
   return (
     <div className="mt-10">
       <h2 className="font-semibold text-2xl">News</h2>
-      <div className="mt-10 flex gap-6">
+      <div className="mt-10 flex gap-6 w-4xl overflow-x-auto">
         {news.map((item, index) => (
           <div
             ref={ref}
