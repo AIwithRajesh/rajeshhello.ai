@@ -15,14 +15,14 @@ export default function News() {
   }, []);
 
   return (
-    <div className="mt-10">
+    <div className="mt-10 flex-1">
       <h2 className="font-semibold text-2xl">News</h2>
-      <div className="mt-10 flex gap-6 w-4xl overflow-x-auto">
+      <div className="mt-10 bg-white flex w-[53rem] space-x-4 overflow-x-auto noscrollbar">
         {news.map((item, index) => (
           <div
             ref={ref}
             key={index}
-            className="mb-4 w-45 shadow-2xl p-4 rounded-md"
+            className="mb-4 border border-color min-h-[465px] min-w-45 max-[212px] p-4 rounded-md "
           >
             <Image
               src={github}

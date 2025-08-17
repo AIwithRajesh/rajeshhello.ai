@@ -1,6 +1,7 @@
 export const news = [
   {
-    title: "New project launched: AI Assistant for Healthcare",
+    title:
+      "Thrilled to announce AI powered OCR is on live go and use here’s OCR.",
     date: "Aug, 2023",
   },
   {

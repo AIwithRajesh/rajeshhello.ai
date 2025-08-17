@@ -19,3 +19,11 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.noscrollbar {
+  scrollbar-width: none;
+}
+
+.border-color {
+  border-color: #e5e7eb;
+}
